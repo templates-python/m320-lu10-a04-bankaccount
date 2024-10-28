@@ -23,22 +23,24 @@ class TestBankAccount:
         bc.interest = 4.5
         assert bc.interest == 4.5
 
-    def test_pay_in_bank_account(self, bc):
-        bc.pay_in_money(500.0)
+    def test_deposit_bank_account(self, bc):
+        bc.deposit_money(500.0)
         assert bc.balance == 1500.0
 
     def test_withdraw_bank_account_well(self, bc):
-        assert bc.has_available(600.0) == True
+        assert bc.has_available(600.0)
+        assert bc.withdraw_money(600.0) == 600.0
         assert bc.balance == 400.0
 
-    def test_withdraw_bank_account_empty(self, bc):
+    def test_withdraw_bank_account_all(self, bc):
         assert bc.has_available(1000)
+        assert bc.withdraw_money(1000.0) == 1000.0
         assert bc.balance == 0
 
-    def test_withdraw_bank_account_ugly(self, bc):
-        assert bc.has_available(2000.0) == False
+    def test_withdraw_bank_account_too_much(self, bc):
+        assert bc.has_available(2000.0) is False
 
-    def test_bank_account_print(self,bc, capsys):
+    def test_bank_account_print(self, bc, capsys):
         print(bc)
         captured = capsys.readouterr()
         assert captured.out == '------------------------------------------------\nKunde    : Ria\nKontotyp : Standard bank account\n\tSaldo: 1000.0\n\tZins : 4.5\n'

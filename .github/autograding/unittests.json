@@ -1,7 +1,103 @@
 [
   {
-    "name": "test",
-    "function": "test",
+    "name": "test_bank_account_init",
+    "function": "test_bank_account_init",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_set_get_interest",
+    "function": "test_set_get_interest",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_deposit_bank_account",
+    "function": "test_deposit_bank_account",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_bank_account_well",
+    "function": "test_withdraw_bank_account_well",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_bank_account_all",
+    "function": "test_withdraw_bank_account_all",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_bank_account_too_much",
+    "function": "test_withdraw_bank_account_too_much",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_bank_account_print",
+    "function": "test_bank_account_print",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_person_init",
+    "function": "test_person_init",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_persons_address",
+    "function": "test_persons_address",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_person_print",
+    "function": "test_person_print",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_salary_account_init",
+    "function": "test_salary_account_init",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_set_get_overdraw",
+    "function": "test_set_get_overdraw",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_salary_account_well",
+    "function": "test_withdraw_salary_account_well",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_salary_account_overdraw",
+    "function": "test_withdraw_salary_account_overdraw",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_salary_account_all",
+    "function": "test_withdraw_salary_account_all",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_withdraw_salary_account_ugly",
+    "function": "test_withdraw_salary_account_ugly",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_salary_account_print",
+    "function": "test_salary_account_print",
     "timeout": 10,
     "points": 1
   }

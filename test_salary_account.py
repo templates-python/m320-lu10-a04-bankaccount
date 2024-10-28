@@ -18,23 +18,26 @@ class TestSalaryAccount:
         assert bc.owner == owner
         assert bc.balance == 1000.0
         assert bc.interest == 4.5
-        assert bc.overdraw == 500
+        assert bc.overdraft == 500
         assert bc.type == 'Salary bank account'
 
     def test_set_get_overdraw(self, bc):
-        bc.overdraw = 250
-        assert bc.overdraw == 250
+        bc.overdraft = 250
+        assert bc.overdraft == 250
 
     def test_withdraw_salary_account_well(self, bc):
         assert bc.has_available(600.0) is True
+        assert bc.withdraw_money(600.0) == 600.0
         assert bc.balance == 400.0
 
     def test_withdraw_salary_account_overdraw(self, bc):
         assert bc.has_available(1200.0) is True
+        assert bc.withdraw_money(1200.0) == 1200.0
         assert bc.balance == -200.0
 
-    def test_withdraw_salary_account_empty(self, bc):
+    def test_withdraw_salary_account_all(self, bc):
         assert bc.has_available(1500)
+        assert bc.withdraw_money(1500.0) == 1500.0
         assert bc.balance == -500
 
     def test_withdraw_salary_account_ugly(self, bc):
