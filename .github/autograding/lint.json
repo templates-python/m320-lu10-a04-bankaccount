@@ -1,5 +1,10 @@
 {
-  "files": ["main.py"],
-  "ignore" : [],
-  "max": 20
+  "files": [
+    "account_index_exception.py",
+    "bankaccount.py",
+    "customer.py",
+    "salary_account.py"
+  ],
+  "ignore": [],
+  "max": 10
 }
