@@ -3,7 +3,8 @@
     "account_index_exception.py",
     "bankaccount.py",
     "customer.py",
-    "salary_account.py"
+    "salary_account.py",
+    "main.py"
   ],
   "ignore": [],
   "max": 10

@@ -100,5 +100,11 @@
     "function": "test_salary_account_print",
     "timeout": 10,
     "points": 1
+  },
+  {
+    "name": "test",
+    "function": "test",
+    "timeout": 10,
+    "points": 1
   }
 ]
