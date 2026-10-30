@@ -1,6 +1,6 @@
 """ provides a class to describe a person """
 
-
+from datetime import date
 class Person:
     """
     Defines a "general" person with
@@ -58,11 +58,17 @@ class Person:
         """
         self._address = address
 
+    @property
+    def age(self):
+        """ returns the age """
+        this_year = date.today().year
+        return this_year - self.birth_year
+
     def __str__(self):
         """
         Returns a string representation of the object
         """
-        return f'Person: {self._name}\n\tAlter :   {self.birth_year}\n\tAdresse : {self.address}'
+        return f'Person: {self._name}\n\tAlter :   {self.age}\n\tAdresse : {self.address}'
 
 
 # nur für Test
