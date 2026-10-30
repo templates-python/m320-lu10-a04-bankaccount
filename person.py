@@ -24,7 +24,7 @@ class Person:
 
         self._name = name
         self._birth_year = year
-        self._address = ''
+        self._address = None
 
     @property
     def name(self):
