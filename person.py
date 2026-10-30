@@ -25,7 +25,7 @@ class Person:
 
         self._name = name
         self._birth_year = year
-        self._address = ''
+        self._address = None
 
     @property
     def name(self):
@@ -63,13 +63,13 @@ class Person:
     def age(self):
         """ returns the age """
         this_year = date.today().year
-        return self.birth_year - this_year
+        return this_year - self.birth_year
 
     def __str__(self):
         """
         Returns a string representation of the object
         """
-        return f'Person: {self._name}\n\tAlter :   {self.birth_year}\n\tAdresse : {self.address}'
+        return f'Person: {self._name}\n\tAlter :   {self.age}\n\tAdresse : {self.address}'
 
 
 # nur für Test
