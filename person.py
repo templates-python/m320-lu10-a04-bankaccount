@@ -1,4 +1,5 @@
 """ provides a class to describe a person """
+from datetime import date
 
 
 class Person:
@@ -57,6 +58,12 @@ class Person:
         :param address: The address of the person
         """
         self._address = address
+
+    @property
+    def age(self):
+        """ returns the age """
+        this_year = date.today().year
+        return self.birth_year - this_year
 
     def __str__(self):
         """
