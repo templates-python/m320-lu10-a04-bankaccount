@@ -19,4 +19,4 @@ class TestPerson:
         person.address = 'Testadresse'
         print(person)
         captured = capsys.readouterr()
-        assert captured.out == 'Person: Max\n\tAlter :   2000\n\tAdresse : Testadresse\n'
+        assert captured.out == 'Person: Max\n\tAlter :   26\n\tAdresse : Testadresse\n'

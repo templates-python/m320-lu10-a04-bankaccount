@@ -63,7 +63,7 @@ class Person:
     def age(self):
         """ returns the age """
         this_year = date.today().year
-        return self.birth_year - this_year
+        return this_year - self.birth_year
 
     def __str__(self):
         """
